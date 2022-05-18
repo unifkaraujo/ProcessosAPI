@@ -8,7 +8,7 @@ n = input("Digite o valor de n: ")
 
 # enviando a requisicao para o processo 2
 inicio = time.time()
-link = f"https://api.kaiquearaujo.repl.co/numprimos/{cod_inicial}/{n}"
+link = f"https://api-3.kaiquearaujo.repl.co/numprimos/{cod_inicial}/{n}"
 requisicao = requests.get(link)
 fim = time.time()
 tempo = (fim-inicio)
@@ -33,7 +33,7 @@ if (requisicao.json()['Chave'] != 'Parâmetros inválidos'):
     while (tempo < 5.0):
         cod_inicial = random.randint(10000001,20000000)
         n = random.randint(5000,15000)
-        link = f"https://api.kaiquearaujo.repl.co/numprimos/{cod_inicial}/{n}"
+        link = f"https://api-3.kaiquearaujo.repl.co/numprimos/{cod_inicial}/{n}"
         requisicao = requests.get(link)
         fim = time.time()    
         tempo = fim - inicio
