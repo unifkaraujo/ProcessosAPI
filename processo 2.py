@@ -46,7 +46,7 @@ def numprimos(cod_inicial,n):
     primodir = qtdvetordir - 1
 
     # encontrado os numeros primos, envio a requisicao para o processo 3 calcular a chave
-    link = f"https://api-2.kaiquearaujo.repl.co/gerachave/{vet[primoleft]}/{vetdir[primodir]}"
+    link = f"https://api-4.kaiquearaujo.repl.co/gerachave/{vet[primoleft]}/{vetdir[primodir]}"
     requisicao = requests.get(link)
     
     #Imprimindo as resposta e retornando para o processo 1
