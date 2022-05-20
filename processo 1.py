@@ -13,7 +13,7 @@ requisicao = requests.get(link)
 fim = time.time()
 tempo = (fim-inicio)
 
-if (requisicao.json()['Chave'] != 'Parâmetros inválidos'):
+if (requisicao.json()['Chave'] != 'Parametros invalidos'):
     print('\nRespostas dos processos:')
     print ('\nNúmeros encontrados no processo 2: ')
     print (requisicao.json()['Primo left'] + ' <------ ' + str(cod_inicial) + ' ------> ' + requisicao.json()['Primo dir'])
